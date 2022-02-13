@@ -1,8 +1,11 @@
 import '../../src/style.css'
+import { Footer } from './Footer'
+import { Header } from './Header'
 
 export function Welcome(){
     return (
-        <main id="home">
+        <>
+        <Header /><main id="home">
             <video src="./src/assets/vid/vd-home.mp4" muted autoPlay loop></video>
             <div id="txt-home">
                 <h2>Dê asas a sua imaginação!</h2>
@@ -10,10 +13,11 @@ export function Welcome(){
                 </p>
 
                 <form id="buscar">
-                    <input type="text" placeholder="Digite o seu destino aqui..."/>
+                    <input type="text" placeholder="Digite o seu destino aqui..." />
                     <button type="submit">Buscar</button>
                 </form>
             </div>
-         </main>
+        </main>
+        </>
     )
 }

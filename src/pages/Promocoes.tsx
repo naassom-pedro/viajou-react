@@ -6,6 +6,7 @@ export function Promocoes() {
     return (
         <>
             <Header />
+            <main>
             <div className="titulo-principal">
             <h1>Aqui o desconto é o ano todo!</h1>
             <p>Preparamos os melhores descontos para você, confere e pegue já o seu.</p>
@@ -65,6 +66,7 @@ export function Promocoes() {
                 </div>
             </div>
         </div>
+        </main>
         <Footer />
         </>
     )

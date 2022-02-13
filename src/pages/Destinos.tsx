@@ -1,11 +1,13 @@
 import '../../src/style.css'
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 
 
 export function Destinos() {
     return (
-        <><>
+        <>
             <Header />
+        <main>
             <div className="titulo-principal">
                 <h1>Nossos destinos preferidos</h1>
                 <p>Selecionamos os melhores lugares para você curtir e relaxar agora mesmo.</p>
@@ -29,9 +31,8 @@ export function Destinos() {
                     </div>
                 </div>
             </div>
-        </>
-        <>
-                <div className="card-section" id="card1">
+        
+            <div className="card-section" id="card1">
                     <div className="card-destino">
                         <img src="./src/assets/img/london.jpg" />
                     </div>
@@ -47,8 +48,7 @@ export function Destinos() {
                         </div>
                     </div>
                 </div>
-            </>
-            <>
+            
                 <div className="card-section">
                     <div className="card-destino">
                         <img src="./src/assets/img/venezia.jpg" alt="" />
@@ -83,8 +83,11 @@ export function Destinos() {
                         </div>
                     </div>
                 </div>
+            </main>
+            <Footer />
+            
             </>
-            </>
+
             
     );
 }

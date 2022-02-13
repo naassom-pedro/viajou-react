@@ -1,17 +1,19 @@
 import '../../src/style.css'
+import { Link } from 'react-router-dom';
+import { AppRoutes } from '../Routes';
 
 export function Header(){
     return (
         <header>
              <div className="logo">
-                 <h1>Viajou</h1>
+                 <h1>Viajou 2.0</h1>
              </div>
             <nav>
                 <ul>
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="./destinos.html">destino</a></li>
-                    <li><a href="./promocoes.html">promoções</a></li>
-                    <li><a href="./contato.html">contato</a></li>
+                    <li><Link to="/">home</Link></li>
+                    <li><Link to="/destinos">destino</Link></li>
+                    <li><Link to="/promocoes">promoções</Link></li>
+                    <li><Link to="/contato">contato</Link></li>
                 </ul>
             </nav>
         </header>

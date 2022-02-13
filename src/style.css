@@ -3,8 +3,8 @@
 :root{
     --color1: #ffffff;
     --color2: #000000;
-    --color3: #567ECA; /* cor primaria*/
-    --color4: #A6C6F1; /* cor secundaria*/
+    --color3: #8f2d56; /* cor primaria*/
+    --color4: #d81159; /* cor secundaria*/
 }
 * {
     font-family:  Poppins, Arial, Helvetica, sans-serif;
@@ -16,8 +16,9 @@
 }
 header{
     position: fixed;
-    width: 50vw;
     display: flex;
+    margin: 10px 10px;
+    width: 50%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +27,7 @@ header{
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     padding: 0 20px;
     z-index: 1000;
-    border-radius: 0px 0px 40px 0px;
+    border-radius: 5px;
 }
 main{
     display: flex;
@@ -61,7 +62,6 @@ nav ul li a{
 .logo h1{
     color: var(--color1);
 }
-
 #home video{
     width: 100%;
     height: 100vh;
@@ -174,7 +174,7 @@ nav ul li a{
     width: 100px;
     min-width: 100px;
     padding: 10px 30px;
-    border-radius: 50px;
+    border-radius: 5px;
     margin: auto;
     margin-top: 20px;
     background-color: var(--color4);
@@ -204,7 +204,7 @@ nav ul li a{
     border: none;
     width: 90%;
     padding: 10px 30px;
-    border-radius: 50px;
+    border-radius: 5px;
     margin: 10px 0;
     background-color: #e7e7e7cb;
     transition: 0.5s ease;
@@ -218,7 +218,7 @@ nav ul li a{
     border: none;
     width: 25%;
     padding: 10px 30px;
-    border-radius: 50px;
+    border-radius: 5px;
     margin: 10px 0;
     background-color: var(--color4);
     transition: 0.5s ease;
@@ -279,7 +279,7 @@ nav ul li a{
     color: var(--color2);
     padding: 20px;
     background-color: var(--color3);
-    border-radius: 0 20px;
+    border-radius: 5px;
     border-bottom: 5px var(--color4)    outset;
 }
 .card-detalhes #title{
@@ -304,7 +304,7 @@ nav ul li a{
 .card-destino-action button{
     border: none;
     padding: 10px 30px;
-    border-radius: 50px;
+    border-radius: 5px;
     margin: 10px 0;
     background-color: var(--color4);
     transition: 0.5s ease;
@@ -327,7 +327,7 @@ nav ul li a{
     background-color: var(--color3);
     height: 200px;
     width: 200px;
-    border-radius: 7px 0px 0px 7px;
+    border-radius: 5px 0px 0px 5px;
     box-shadow: 0px 0px 5px #0000004f;
 }
 .card-desconto .div1 h1{
@@ -339,7 +339,7 @@ nav ul li a{
     background-color: var(--color1);
     height: 200px   ;
     width: 400px;
-    border-radius: 0px 7px 7px 0px;
+    border-radius: 0px 5px 5px 0px;
     box-shadow: 0px 0px 5px #0000004f;
     padding: 10px;
 }
@@ -399,7 +399,7 @@ section{
     z-index: -10;
 }
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 20px;
@@ -415,7 +415,7 @@ footer div{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 100%;
     height: max-content;
     margin: auto;
 }
@@ -443,6 +443,9 @@ footer div:nth-child(2){
         display: flex;
         flex-direction: column;
         width: max-content;
+        margin: 10px auto 10px auto;
+        border-radius: 5px;
+
     }
     .container-contato{
         flex-direction: column;
@@ -453,7 +456,7 @@ footer div:nth-child(2){
     }
     
     body{
-        background-color: var(--color4);
+        width: 100vw;
     }
     #contato-bg{
         display: none;
